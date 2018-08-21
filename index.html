@@ -25,15 +25,19 @@
 			font-size: 32px;
 			line-height: 1.1;
 			font-weight: 400;
+			margin: 0;
+			padding-bottom: 16px;
 		}
 
 		p {
 			font-size: 16px;
 			line-height: 1.5;
+			margin: 0;
 		}
 
 
-		ul, li {
+		ul,
+		li {
 			list-style-type: none;
 			padding: 0;
 			margin: 0;
@@ -43,49 +47,73 @@
 		ul {
 			padding-bottom: 16px;
 		}
+
 		a {
 			color: inherit;
 			text-decoration: none;
 		}
-		
+
 		a:hover {
 			text-decoration: underline;
+		}
+
+		.sidebar {
+			width: 33.33%;
+			float: left;
+		}
+
+		@media screen and (max-width: 640px) {
+			.sidebar {
+				width: 100%;
+			}
+			.list-mobile {
+				width: 50%;
+				display: inline-block;
+				float: left;
+			}
 		}
 	</style>
 </head>
 
 <body id="home">
-
-	<h1 class="tk-futura-pt">Glokala
-		<br>Folkhögskolan</h1>
-	<ul>
-		<li>
-			<a href="http://mail.glokala.org/" class="tk-futura-pt">Mail</a>
-		</li>
-		<li>
-			<a href="http://kalender.glokala.org/" class="tk-futura-pt">Kalender</a>
-		</li>
-		<li>
-			<a href="http://drive.glokala.org/" class="tk-futura-pt">Drive</a>
-		</li>
-		<li>
-			<a href="http://classroom.google.com" class="tk-futura-pt">Classroom</a>
-		</li>
-	</ul>
-	<ul>
-		<li>
-			<a href="http://mail.glokala.org/" class="tk-futura-pt">SchoolSoft</a>
-		</li>
-		<li>
-			<a href="http://kalender.glokala.org/" class="tk-futura-pt">Support</a>
-		</li>
-		<li>
-			<a href="http://drive.glokala.org/" class="tk-futura-pt">GDPR</a>
-		</li>
-		<li>
-			<a href="http://classroom.google.com" class="tk-futura-pt">CSN Mina sidor</a>
-		</li>
-	</ul>
+	<div class="header">
+		<h1 class="tk-futura-pt">Glokala
+			<br>Folkhögskolan</h1>
+	</div>
+	<div class="sidebar">
+		<ul class="list-mobile">
+			<li>
+				<a href="http://mail.glokala.org/" class="tk-futura-pt">Mail</a>
+			</li>
+			<li>
+				<a href="http://kalender.glokala.org/" class="tk-futura-pt">Kalender</a>
+			</li>
+			<li>
+				<a href="http://drive.glokala.org/" class="tk-futura-pt">Drive</a>
+			</li>
+			<li>
+				<a href="http://classroom.google.com" class="tk-futura-pt">Classroom</a>
+			</li>
+		</ul>
+		<ul class="list-mobile">
+			<li>
+				<a href="http://mail.glokala.org/" class="tk-futura-pt">SchoolSoft</a>
+			</li>
+			<li>
+				<a href="http://kalender.glokala.org/" class="tk-futura-pt">Support</a>
+			</li>
+			<li>
+				<a href="http://drive.glokala.org/" class="tk-futura-pt">GDPR</a>
+			</li>
+			<li>
+				<a href="http://classroom.google.com" class="tk-futura-pt">CSN Mina sidor</a>
+			</li>
+		</ul>
+	</div>
+	<div class="main">
+		<h1 class="tk-futura-pt">FAQ</h1>
+		<p class="tk-futura-pt">Lorem Ipsum</p>
+	</div>
 </body>
 
 </html>
