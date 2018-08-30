@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<title>Landningssida för Glokala Folkhögskolans deltagare</title>
@@ -15,9 +16,10 @@
 			margin: 0 auto;
 			max-width: 1024px;
 			width: 100%;
-			padding: 64px 32px;
+			padding: 48px 32px;
 			box-sizing: border-box;
 			color: #FF665F;
+			background-color:rgba(255, 0, 0, 0.05);
 		}
 
 		h1 {
@@ -25,7 +27,7 @@
 			line-height: 1.1;
 			font-weight: 400;
 			margin: 0;
-			padding-bottom: 16px;
+			padding-bottom: 32px;
 		}
 
 		h2 {
@@ -37,9 +39,19 @@
 		}
 
 		p {
+			display: block;
+			max-width: 66.6%;
 			font-size: 16px;
-			line-height: 1.5;
+			line-height: 1.618;
+			font-weight: 400;
 			margin: 0;
+			color: rgba(0, 0, 0, 0.7);
+			margin-bottom: 16px;
+		}
+
+		.question img {
+			width: 100%;
+			margin: 16px 0 24px 0;
 		}
 
 
@@ -60,6 +72,10 @@
 			text-decoration: none;
 		}
 
+		p a {
+			text-decoration: underline;
+		}
+
 		a:hover {
 			text-decoration: underline;
 		}
@@ -70,20 +86,26 @@
 			margin-bottom: 32px;
 		}
 
-		.header {
-			display: block;
-
+		.social, .main {
+			float: left;
+			width: 66%;
 		}
+
+		.question {
+			margin-bottom: 24px;
+		}
+
+		.header {}
 
 		.logo {
 			width: 33.33%;
 		}
 
 		.social {
-			width: 40%;
+			
 		}
 
-		@media only screen and (max-width: 640px) {
+		@media screen and (max-width: 640px) {
 			.sidebar {
 				width: 100%;
 			}
@@ -92,51 +114,82 @@
 				display: inline-block;
 				float: left;
 			}
+
+			.main {
+				width: 100%;
+			}
 		}
 	</style>
 </head>
+
 <body id="home">
-	<div>
+	<div class="header">
 		<div class="logo">
 			<h1 class="tk-futura-pt">Glokala
-				<br>Folkhögskolan
-			</h1>
+				<br>Folkhögskolan</h1>
 		</div>
 	</div>
-		<div class="sidebar">
-			<ul class="list-mobile">
-				<li>
-					<a href="http://mail.glokala.org/" class="tk-futura-pt">Mail</a>
-				</li>
-				<li>
-					<a href="http://kalender.glokala.org/" class="tk-futura-pt">Kalender</a>
-				</li>
-				<li>
-					<a href="http://drive.glokala.org/" class="tk-futura-pt">Drive</a>
-				</li>
-				<li>
-					<a href="http://classroom.google.com" class="tk-futura-pt">Classroom</a>
-				</li>
-			</ul>
-			<ul class="list-mobile">
-				<li>
-					<a href="http://mail.glokala.org/" class="tk-futura-pt">SchoolSoft</a>
-				</li>
-				<li>
-					<a href="http://kalender.glokala.org/" class="tk-futura-pt">Support</a>
-				</li>
-				<li>
-					<a href="http://drive.glokala.org/" class="tk-futura-pt">GDPR</a>
-				</li>
-				<li>
-					<a href="http://classroom.google.com" class="tk-futura-pt">CSN Mina sidor</a>
-				</li>
-			</ul>
+	<div class="sidebar">
+		<ul class="list-mobile">
+			<li>
+				<a href="http://mail.glokala.org/" class="tk-futura-pt">Mail</a>
+			</li>
+			<li>
+				<a href="http://kalender.glokala.org/" class="tk-futura-pt">Kalender</a>
+			</li>
+			<li>
+				<a href="http://drive.glokala.org/" class="tk-futura-pt">Drive</a>
+			</li>
+			<li>
+				<a href="http://classroom.google.com" class="tk-futura-pt">Classroom</a>
+			</li>
+		</ul>
+		<ul class="list-mobile">
+			<li>
+				<a href="http://mail.glokala.org/" class="tk-futura-pt">SchoolSoft</a>
+			</li>
+			<li>
+				<a href="http://kalender.glokala.org/" class="tk-futura-pt">Support</a>
+			</li>
+			<li>
+				<a href="http://drive.glokala.org/" class="tk-futura-pt">GDPR</a>
+			</li>
+			<li>
+				<a href="http://classroom.google.com" class="tk-futura-pt">CSN Mina sidor</a>
+			</li>
+		</ul>
+	</div>
+	<div class="main">
+		<h1 class="tk-futura-pt">Vanliga frågor</h1>
+		<div class="question">
+			<h2 class="tk-futura-pt">Jag har glömt mitt SchoolSoft-lösenord! </h2>
+		
+			<p class="tk-futura-pt">
+				Om du har glömt ditt lösenord kan du på glokala.se/schoolsoft klicka på länken <i>Behöver du hjälp med inloggningen</i>, du kan
+				då få ett engångslösenord skickat till din e-mail. </p>	<p class="tk-futura-pt">Om det inte fungerar maila lisa.nissen@glokala.org eller kom in på
+				Lisas kontor så får du ett nytt lösenord.</p>
 		</div>
-		<div class="main">
-			<h1 class="tk-futura-pt">Vanliga frågor</h1>
-			<h2 class="tk-futura-pt">Hur många bultar finns det i Ölandsbron?</h2>
-			<p class="tk-futura-pt">Svar!</p>
+		<div class="question">
+			<h2 class="tk-futura-pt">När får jag mina pengar?</h2>
+			<p class="tk-futura-pt">
+				När 1) studieförsäkran skickats in, och 2) Glokala registrerat att du påbörjat kursen så är allt på plats för en utbetalning.
+				Om du haft CSN innan så går betalningen snabbare än om du är ny i CSN-systemet. </p>
 		</div>
+		<div class="question">
+			<h2 class="tk-futura-pt">Varför behöver jag uppge mitt bankkontonummer?</h2>
+			<p class="tk-futura-pt">För att vi skall kunna betala tillbaka depositionen för dina böcker (som du betalat med Swish) behöver vi dina bankkontouppgifter.
+				Var kan finns böckerna jag behöver? Du kan hämta böcker hos Felicia, mot deposition.</p>
+		</div>
+		<div class="question">
+			<h2 class="tk-futura-pt">Vad kostar böckerna?</h2>
+			<p class="tk-futura-pt">För att få tillgång till all kurslitteratur Swishar du 300 kronor till 1231561711 för alla böcker - inte 300 kr per bok.
+				När du swishat och hämtar böckerna hos Felicia får du också ett kvitto som visar att du har betalat depositionen. </p>
+		</div>
+		<div class="question">
+			<h2 class="tk-futura-pt">Vad gör jag om jag tappat bort en bok?</h2>
+			<p class="tk-futura-pt">Vid förlust av kurslitteratur betalas inte depositionen tillbaka.</p>
+		</div>
+	</div>
 </body>
+
 </html>
